@@ -1,0 +1,71 @@
+body {
+    background-color: #ADD8E6; /* Default light blue color */
+    background: url('./default-wallpaper.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    transition: background-color 0.5s ease;
+
+}
+
+.container {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background to make content visible */
+    border-radius: 15px; /* Optional: adds rounded corners */
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.6); /* Lighter card background */
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Slight shadow for emphasis */
+}
+
+.forecast-card {
+    background: rgba(255, 255, 255, 0.3); /* Slightly lighter for better contrast */
+    color: #2f2f2f; /* Darker text for better readability */
+    border-radius: 10px;
+    padding: 15px;
+    width: 120px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+footer {
+    background-color: #00bcd4; /* Bright cyan for footer */
+    color: white;
+    padding: 5px 10px; /* Reduced size of the footer */
+    font-size: 12px; /* Reduced font size */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow at the top of the footer */
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 8px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    #weatherInfo, #forecastCards {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+}
